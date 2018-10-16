@@ -77,9 +77,15 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
+            {{--<div class="content">--}}
+                {{--<div class="title m-b-md">--}}
+                    {{--Laravel--}}
+                {{--</div>--}}
+                <div class="content">
+                    <div class="title m-b-md">
+                        Laravel
+                    </div>
+                    @lang('messages.title')
                 </div>
 
                 <div class="links">

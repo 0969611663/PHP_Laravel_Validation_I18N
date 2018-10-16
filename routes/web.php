@@ -17,3 +17,10 @@ Route::get('/', function () {
 
 Route::get('create', 'PostController@create');
 Route::post('store', 'PostController@store')->name('store');
+
+
+//[Thực hành] Bổ sung hỗ trợ I18N cho ứng dụng quản lý khách hàng
+Route::get('/{locale?}', function ($locale = null) {
+    App::setLocale($locale);
+    return view('welcome');
+});
